@@ -16,8 +16,8 @@
 
 ### Links
 
-- Solution URL: [https://github.com/MuharemagiC/tip-calculator.git](https://github.com/MuharemagiC/github-user-search-app)
-- Live Site URL: [https://muharemagic.github.io/tip-calculator/](https://muharemagic.github.io/github-user-search-app/)
+- Solution URL: [https://github.com/MuharemagiC/github-user-search-app.git](https://github.com/MuharemagiC/github-user-search-app)
+- Live Site URL: [https://muharemagic.github.io/github-user-search-app/](https://muharemagic.github.io/github-user-search-app/)
 
 ## My process
 
