@@ -4,12 +4,12 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'plugin:prettier/recommended',
     'plugin:react/recommended',
     'airbnb',
     'plugin:@typescript-eslint/recommended',
     'prettier/prettier',
     'prettier',
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
