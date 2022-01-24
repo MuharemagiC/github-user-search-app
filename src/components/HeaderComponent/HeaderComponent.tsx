@@ -20,17 +20,17 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
         onClick={changeThemeHandler}
       >
         <ThemeText themeName={themeName} style={{ alignSelf: 'center' }}>
-          {themeName === theme.LIGHT ? 'ligth' : 'dark'}
+          {themeName === theme.LIGHT ? 'dark' : 'light'}
         </ThemeText>
         <div className={HeaderComponentStyle.HeaderButtonIcon}>
           {themeName === theme.LIGHT ? (
-            <IconSun
+            <IconMoon
               color={
                 themeName === theme.DARK ? colors.WHITE : colors.LIGHT_BLUE
               }
             />
           ) : (
-            <IconMoon
+            <IconSun
               color={
                 themeName === theme.DARK ? colors.WHITE : colors.LIGHT_BLUE
               }
