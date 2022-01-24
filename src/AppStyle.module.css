@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.AppContainer {
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 750px) {
+  .AppContainer {
+    width: 90%;
+  }
+}
+
+@media (min-width: 870px) {
+  .AppContainer {
+    width: 80%;
+  }
+}
+
+@media (min-width: 970px) {
+  .AppContainer {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1170px) {
+  .AppContainer {
+    width: 60%;
+  }
+}

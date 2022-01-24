@@ -1,0 +1,12 @@
+.SubmitButton {
+  background: #0079ff;
+  border-radius: 10px;
+  border: none;
+  height: 46px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-right: 10px;
+}
