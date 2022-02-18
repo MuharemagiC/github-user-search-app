@@ -41,6 +41,46 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
+    const fetchData = async (): Promise<void> => {
+      try {
+        const response = await fetch(`https://api.github.com/users/octocat`);
+        if (response.status === 200) {
+          const {
+            avatar_url: avatarUrl,
+            html_url: htmlUrl,
+            followers,
+            following,
+            public_repos: publicRepos,
+            created_at: createdAt,
+            login,
+            bio,
+            location,
+            twitter_username: twitterUsername,
+          } = await response.json();
+          const githubUser = {
+            avatarUrl,
+            htmlUrl,
+            followers,
+            following,
+            publicRepos,
+            createdAt,
+            login,
+            bio,
+            location,
+            twitterUsername,
+          };
+          setUser(githubUser);
+          setError('Success');
+          setInputValue('');
+        } else setError('No results');
+      } catch (err) {
+        setError('No results');
+      }
+    };
+    fetchData();
+  }, []);
+
+  useEffect(() => {
     document.body.style.backgroundColor =
       themeName === theme.LIGHT
         ? colors.BACKGROUND_LIGHT
@@ -106,9 +146,7 @@ const App: React.FC = () => {
         inputValue={inputValue}
         error={error}
       />
-      {error === 'Success' && (
-        <MainCardComponent themeName={themeName} user={user} />
-      )}
+      <MainCardComponent themeName={themeName} user={user} />
     </div>
   );
 };
